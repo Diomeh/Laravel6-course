@@ -29,11 +29,8 @@
 			{!! Form::password('password', ['class' => 'form-control']) !!}
 		</div>
 
-		{{-- <div class="btn-group mtop16" role="group">
-			{!! Form::submit('Ingresar', [
-				'class' => 'btn btn-primary',
-				'style' => 'border-right: 1px solid darkgray;'
-			]) !!}
+			{!! Form::submit('Ingresar', ['class' => 'btn btn-primary mtop16']) !!}
+		{!! Form::close() !!}
 
 		<div class="footer mtop16">
 			<hr style="border-top: 2.5px solid #bbb; border-radius: 5px;">
