@@ -10,11 +10,14 @@
 	<!-- Bootstrap 4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-	<!-- CSS stylesheet path --> 
-	<link rel="stylesheet" href="{{ url('/static/css/connect.css?v='.time()) }}">
-
 	<!-- Font -->
 	<script src="https://kit.fontawesome.com/c7ca3a084e.js" crossorigin="anonymous"></script> 
+
+	{{-- jQuery --}}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- CSS stylesheet path --> 
+	<link rel="stylesheet" href="{{ url('/static/css/connect.css?v='.time()) }}">
 </head>
 <body>
 	@section('content')
