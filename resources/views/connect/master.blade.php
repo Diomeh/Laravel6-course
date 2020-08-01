@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="{{ url('/static/css/connect.css?v='.time()) }}">
 </head>
 <body>
-	@section('content')
-	@show
+ 	@yield('content')
 </body>
 </html>
