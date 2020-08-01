@@ -25,9 +25,8 @@
 				<div class="input-group-text">
 					<i class="fas fa-unlock-alt"></i>
 				</div>
+				{!! Form::password('password', ['class' => 'form-control']) !!}
 			</div>
-			{!! Form::password('password', ['class' => 'form-control']) !!}
-		</div>
 
 			{!! Form::submit('Ingresar', ['class' => 'btn btn-primary mtop16']) !!}
 		{!! Form::close() !!}
