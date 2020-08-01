@@ -6,8 +6,12 @@
 
 {{-- Page content --}}
 @section('content')
-<div class="box box-login shadow-lg p-3 mb-5 bg-white rounded">
-	{!! Form::open(['url' => 'login']) !!}
+<div class="box center shadow-lg mb-5 bg-white rounded">
+	<div class="header">
+		<a href="{{ url('/') }}">
+			<img src="{{ url('/static/images/logo.png') }}" alt="" class="img-fluid">
+		</a>
+	</div>
 
 		<label for="email">Correo electrónico</label>
 		<div class="input-group">
