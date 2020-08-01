@@ -35,11 +35,28 @@
 				'style' => 'border-right: 1px solid darkgray;'
 			]) !!}
 
-			{!! Form::button('¿Olvidaste tus datos?', [
-				'class' => 'btn btn-primary',
-				'style' => 'border-left: 1px solid darkgray;'
-			]) !!}
-		</div> --}}
+		<div class="footer mtop16">
+			<hr style="border-top: 2.5px solid #bbb; border-radius: 5px;">
+
+			<div class="container">
+				<div class="row">
+					<label class="col" style="text-align: center;">¿No posees una cuenta aún?</label>
+					<label class="col" style="text-align: center;">¿Olvidaste tus datos?</label>
+				</div>
+			</div>
+
+			<div class="btn-group" role="group" aria-label="Botones de acción">
+				<a href="{{ url('/register') }}" 
+					class="btn btn-light" 
+					style="border-right: 1px solid #bbb;">
+					Regístrate
+				</a>
+				<a href="{{ url('/recover') }}" 
+					class="btn btn-light" 
+					style="border-left: 1px solid #bbb;">
+					Recupéralos
+				</a>
+			</div>
 
 			{{-- Display error messages --}}
 			@if(Session::has('message'))
