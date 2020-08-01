@@ -110,6 +110,11 @@ class ConnectController extends Controller
     	return view('connect.recover');
     }
 
+    public function postRecover(Request $request)
+    {
+        
+    }
+
     public function getLogout(Request $request)
     {
         Auth::logout();

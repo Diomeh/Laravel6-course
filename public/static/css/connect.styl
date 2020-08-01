@@ -1,4 +1,5 @@
 body 
+	font-size 16px
 	margin 0px
 	background-color #f6f6f6
 	
@@ -6,25 +7,51 @@ body
 	background-color #fff
 	border-radius 8px
 	border 1px solid #d6d6d6
+	box-sizing border-box
 	position absolute
-	padding 16px
 	width 500px
-	.btn-primary
-		background-color: #780348
+	.btn
 		border 0px
 		width 100%
 		transition 0.5s
-	.btn-primary:hover
-		background-color: #ce1d86
+	.btn-primary
+		background-color: #780348
+		&:hover
+			background-color: #ce1d86
+	.btn-light
+		font-size 1em
 	.form-control
 		&:focus
 		&:active
 			outline none
 			box-shadow none
-		
-.box-login
-	left calc(50% - 250px)
-	top calc(50% - 121px)
+	.inside
+		padding 16px
+		.input-group-text
+			background-color: #780348
+			color: #fff
+	.header
+		background-color: #780348
+		border-radius 5px 5px 0px 0px
+		padding 16px
+		a
+			img
+				display block
+				margin 0px auto
+				width 35%
+	.footer
+		font-size .8em
+		.btn-group
+			border 1px solid #bbb
+			border-radius 5px
+			width 100%
+										
+.center
+	margin 0
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
 	
 .mtop16
 	margin-top 16px
