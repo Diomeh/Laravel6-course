@@ -15,15 +15,15 @@
 				<div class="input-group-text">
 					<i class="far fa-envelope"></i>
 				</div>
+				{!! Form::email('email', null, ['class' => 'form-control']) !!}
 			</div>
-			{!! Form::email('email', null, ['class' => 'form-control']) !!}
-		</div>
-		
-		<label class="mtop16" for="email">Contraseña</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<div class="input-group-text">
-					<i class="fas fa-unlock-alt"></i>
+			
+			<label class="mtop16" for="email">Contraseña</label>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<i class="fas fa-unlock-alt"></i>
+					</div>
 				</div>
 				{!! Form::password('password', ['class' => 'form-control']) !!}
 			</div>
