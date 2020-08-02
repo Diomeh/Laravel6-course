@@ -3,7 +3,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/admin')->group(function(){
 	Route::get('/', 'Admin\DashboardController@getDashboard');
-	Route::get('/products', 'Admin\Products@getProducts');
-	Route::get('/users', 'Admin\Users@getUsers');
+	Route::get('/users', 'Admin\UserController@getUsers');
+	Route::get('/products', 'Admin\ProductController@getProducts');
 });
 ?>
