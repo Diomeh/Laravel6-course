@@ -18,6 +18,33 @@
 			@include('admin.sidebar')
 		</div>
 		<div class="col2">
+			<nav class="navbar navbar-expand-lg shadow">
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="{{ url('/admin') }}" class="nav-link">
+								<i class="fas fa-home"></i>
+								Dashboard
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="page">
+				<div class="container-fluid">
+					<nav aria-label="breadcrumb shadow">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="{{ url('/admin') }}" class="nav-link">
+									<i class="fas fa-home"></i>
+									Dashboard
+								</a>
+								@yield('breadcrumb')
+							</li>
+						</ol>
+					</nav>
+				</div>
 			
 				@include('alert')
 
