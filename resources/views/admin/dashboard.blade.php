@@ -2,18 +2,8 @@
 
 @section('title', 'Dashboard')
 
-@section('content')
-	@parent
+@section('content-title', 'Dashboard')
 
-	<div class="container-fluid">
-		<div class="panel shadow">
-			<div class="header">
-				<h2 class="title">titulo</h2>
-			</div>
-
-			<div class="inside">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi voluptatum, numquam vitae minus distinctio, ea illum ipsa inventore quas perspiciatis expedita praesentium veniam odit assumenda ratione magni, molestias a.
-			</div>
-		</div>
-	</div>
-@stop
+@section('content-inside')
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellat, maxime vel alias impedit veritatis temporibus, sequi quos veniam eius optio corporis modi dicta molestias at inventore culpa, natus explicabo.
+@endsection

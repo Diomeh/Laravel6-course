@@ -12,7 +12,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 @stop
 
-@section('content')
 	<div class="wrapper">
 		<div class="col1">
 			@include('admin.sidebar')
@@ -26,12 +25,14 @@
 								<i class="fas fa-home"></i>
 								Dashboard
 							</a>
+							@yield('breadcrumb')
 						</li>
 					</ul>
 				</div>
 			</nav>
 
 			<div class="page">
+			@section('content')
 				<div class="container-fluid">
 					<nav aria-label="breadcrumb shadow">
 						<ol class="breadcrumb">
@@ -44,12 +45,13 @@
 							</li>
 						</ol>
 					</nav>
+							@yield('content-header')
+							@yield('content-inside')
 				</div>
 			
 				@include('alert')
+			@show
 
-				@yield('content')
 			</div>
 		</div>
 	</div>
-@stop
