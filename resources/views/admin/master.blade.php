@@ -19,6 +19,10 @@
 		</div>
 		<div class="col2">
 			
+				@include('alert')
+
+				@yield('content')
+			</div>
 		</div>
 	</div>
 @stop
