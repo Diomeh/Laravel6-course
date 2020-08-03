@@ -34,13 +34,9 @@
 			<div class="container-fluid">
 				<nav aria-label="breadcrumb shadow">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item">
-							<a href="{{ url('/admin') }}" class="nav-link">
-								<i class="fas fa-home"></i>
-								Dashboard
-							</a>
-							@yield('breadcrumb')
-						</li>
+						@section('breadcrumb')
+							@include('breadcrumbs.admin.dashboard')
+						@show
 					</ol>
 				</nav>
 			</div>
