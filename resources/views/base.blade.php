@@ -28,7 +28,7 @@
 		</script>
 	@show
 
-	<title>My CMS - @yield('title')</title>
+	<title>@yield('title') - My CMS</title>
 </head>
 <body>
 	@yield('content')

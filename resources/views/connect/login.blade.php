@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="inside">
-		{!! Form::open(['url' => 'login']) !!}
+		{!! Form::open(['url' => '/login']) !!}
 			<label for="email">Correo electrónico</label>
 			<div class="input-group">
 				<div class="input-group-prepend">
