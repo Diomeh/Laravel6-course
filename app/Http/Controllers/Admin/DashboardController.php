@@ -13,7 +13,7 @@ class DashboardController extends Controller
 		$this->middleware('isadmin');
 	}
 
-    public function getDashboard()
+    public function index()
     {
     	return view('admin.dashboard');
     }

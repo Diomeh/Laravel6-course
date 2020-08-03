@@ -15,7 +15,7 @@ class UserController extends Controller
 		$this->middleware('isadmin');
 	}
 
-	public function getUsers()
+	public function index()
 	{
 		return view(
 			'admin.users.home', 

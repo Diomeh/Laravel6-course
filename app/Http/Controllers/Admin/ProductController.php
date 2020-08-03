@@ -13,8 +13,13 @@ class ProductController extends Controller
 		$this->middleware('isadmin');
 	}
 
-	public function getProducts()
+	public function index()
 	{
-		return view('admin.products');
+		return view('admin.products.home');
+	}
+
+	public function add()
+	{
+		return view('admin.products.add');
 	}
 }
