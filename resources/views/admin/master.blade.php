@@ -1,16 +1,13 @@
 @extends('base')
 
 @section('head')
-	@parent
-	
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="routeName" content="{{ Route::currentRouteName() }}">
 
 	<link rel="stylesheet" href="{{ url('/static/css/admin.css?v='.time()) }}">
 
-	{{-- Font --}}
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-@stop
+@endsection
 
 <div class="wrapper">
 	<div class="col1">
@@ -43,7 +40,7 @@
 		
 			@include('alert')
 
-			@section('content')
+			{{-- @section('content') --}}
 				<div class="container-fluid">
 					<div class="panel shadow">
 						<div class="header">
@@ -56,7 +53,7 @@
 						</div>
 					</div>
 				</div>
-			@show
+			{{-- @show --}}
 
 		</div>
 	</div>
