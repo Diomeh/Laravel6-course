@@ -40,7 +40,7 @@
 		
 			@include('alert')
 
-			{{-- @section('content') --}}
+			@section('page-content')
 				<div class="container-fluid">
 					<div class="panel shadow">
 						<div class="header">
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 				</div>
-			{{-- @show --}}
+			@show
 
 		</div>
 	</div>
