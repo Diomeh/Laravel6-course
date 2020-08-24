@@ -2,8 +2,8 @@
 
 @section('title', 'Dashboard')
 
-@section('content-title', 'Dashboard')
+@section('page-header', 'Dashboard')
 
-@section('content-inside')
+@section('page-content')
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellat, maxime vel alias impedit veritatis temporibus, sequi quos veniam eius optio corporis modi dicta molestias at inventore culpa, natus explicabo.
 @stop

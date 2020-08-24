@@ -3,7 +3,19 @@
 @section('title', 'Usuarios')
 
 @section('breadcrumb')
-	@include('breadcrumbs.admin.users.home')	
+	<li class="breadcrumb-item">
+		<a href="{{ url('/admin') }}" class="nav-link">
+			<i class="fas fa-home"></i>
+			&nbsp Dashboard
+		</a>
+	</li>
+
+	<li class="breadcrumb-item active" aria-current="page">
+		<div class="nav-link">
+			<i class="fas fa-users"></i>
+			&nbsp Usuarios
+		</div>
+	</li>
 @endsection
 
 @section('content-title')
@@ -11,10 +23,7 @@
 	Usuarios
 @endsection
 
-@section('content-header')
-@endsection
-
-@section('content-inside')
+@section('page-content')
 	<table class="table">
 		<thead>
 			<tr>

@@ -3,7 +3,19 @@
 @section('title', 'Productos')
 
 @section('breadcrumb')
-	@include('breadcrumbs.admin.products.home')	
+	<li class="breadcrumb-item">
+		<a href="{{ url('/admin') }}" class="nav-link">
+			<i class="fas fa-home"></i>
+			&nbsp Dashboard
+		</a>
+	</li>
+
+	<li class="breadcrumb-item active" aria-current="page">
+		<div class="nav-link">
+			<i class="fas fa-boxes"></i>
+			&nbsp Productos
+		</div>
+	</li>
 @endsection
 
 @section('content-title')
@@ -11,7 +23,7 @@
 	&nbsp Productos
 @endsection
 
-@section('content-inside')
+@section('page-content')
 	<div class="btn-group">
 		<a href="{{ url('/admin/products/add') }}" class="btn btn-primary">
 			<i class="fas fa-plus-square"></i>

@@ -3,7 +3,26 @@
 @section('title', 'Añadir Productos')
 
 @section('breadcrumb')
-	@include('breadcrumbs.admin.products.add')	
+	<li class="breadcrumb-item">
+		<a href="{{ url('/admin') }}" class="nav-link">
+			<i class="fas fa-home"></i>
+			&nbsp Dashboard
+		</a>
+	</li>
+
+	<li class="breadcrumb-item">
+		<a href="{{ url('/admin/products') }}" class="nav-link">
+			<i class="fas fa-boxes"></i>
+			&nbsp Productos
+		</a>
+	</li>
+
+	<li class="breadcrumb-item active" aria-current="page">
+		<div class="nav-link">
+			<i class="fas fa-boxes"></i>
+			&nbsp Añadir producto
+		</div>
+	</li>
 @endsection
 
 @section('content-title')
@@ -11,7 +30,7 @@
 	&nbsp Productos - Añadir
 @endsection
 
-@section('content-inside')
+@section('page-content')
 	{!! Form::open(['url' => '/admin/products/add']) !!}
 		<div class="row">
 		    <div class="col-md-6">
