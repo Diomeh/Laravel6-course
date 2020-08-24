@@ -115,4 +115,12 @@
 			</div>
 		</div>
 	{!! Form::close() !!}
+
+	<script>
+		$(document).ready(function() {
+			$('#file-input').on('change', function(event){
+	 			$('#file-label').text(event.target.value.substring(12));
+			});
+		})
+	</script>
 @stop
