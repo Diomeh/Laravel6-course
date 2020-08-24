@@ -69,7 +69,7 @@
 		</div>
 
 		<div class="row mtop16">
-			<div class="col-md-3">
+			<div class="col-md-6">
 				<label for="price">Precio</label>
 				<div class="input-group">
 		            <div class="input-group-prepend">
@@ -83,7 +83,7 @@
 		        </div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-6">
 				<label for="discount">Descuento</label>
 					<div class="input-group">
 			            <div class="input-group-prepend">
