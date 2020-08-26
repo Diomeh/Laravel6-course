@@ -89,13 +89,15 @@
 			            <div class="input-group-prepend">
 			                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></i></div>
 			            </div>
-			            {!! Form::number('discount', null, ['class' => 'form-control', 
-		            			'min' => '0.1', 
-		            			'max' => '100', 
-		            			'step' => 'any']
-		            		) 
-            			!!}
 			        </div>
+					{!! Form::number('discount', '0', ['class' => 'form-control', 
+							'id' => 'discount',
+	            			'min' => '0.00', 
+	            			'max' => '100', 
+	            			'step' => 'any',
+	            			'style' => 'text-align:right;']
+	            		) 
+        			!!}	
 				</div>
 			</div>
 
