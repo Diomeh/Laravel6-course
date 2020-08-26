@@ -99,6 +99,22 @@
 				</div>
 			</div>
 
+			<div class="col-md-3">
+		        <label for="total-price" style="float: right; margin-right: 3em;">Total</label>
+		        <div class="input-group">
+		            {!! Form::text('total-price', '0.001', ['class' => 'form-control',
+		            		'id' => 'total-price',
+		            		'disabled',
+	            			'style' => 'text-align:right;']
+            			)
+        			!!}	
+		            <div class="input-group-append">
+		                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></div>
+		            </div>
+		        </div>
+		    </div>
+		</div>			
+
 		<div class="row mtop16">
 			<div class="col-md-12">
 				<label for="description">Descripción</label>
