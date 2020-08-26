@@ -72,24 +72,20 @@
 			<div class="col-md-6">
 				<label for="price">Precio</label>
 				<div class="input-group">
-		            <div class="input-group-prepend">
-		                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></i></div>
-		            </div>
 		            {!! Form::number('price', null, ['class' => 'form-control', 
 		            		'min' => '0.001', 
 		            		'step' => 'any']
 		            	) 
             		!!}
+		            <div class="input-group-append">
+		                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></i></div>
+		            </div>
 		        </div>
 			</div>
 
 			<div class="col-md-6">
 				<label for="discount">Descuento</label>
-					<div class="input-group">
-			            <div class="input-group-prepend">
-			                <div class="input-group-text"><i class="fas fa-dollar-sign"></i></i></div>
-			            </div>
-			        </div>
+				<div class="input-group">
 					{!! Form::number('discount', '0', ['class' => 'form-control', 
 							'id' => 'discount',
 	            			'min' => '0.00', 
@@ -98,6 +94,9 @@
 	            			'style' => 'text-align:right;']
 	            		) 
         			!!}	
+					<div class="input-group-append">
+		                <div class="input-group-text"><i class="fas fa-percentage"></i></i></div>
+		            </div>
 				</div>
 			</div>
 
