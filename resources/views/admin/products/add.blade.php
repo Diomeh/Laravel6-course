@@ -133,10 +133,26 @@
 	{!! Form::close() !!}
 
 	<script>
-		$(document).ready(function() {
-			$('#file-input').on('change', function(event){
-	 			$('#file-label').text(event.target.value.substring(12));
-			});
+		// Update file input text box when file uploaded
+		$('#file-input').on('change', function(event){
+ 			$('#file-label').text(event.target.value.substring(12));
+		});
+
+		// Update total price tag
+		function updatePrice(price, discount) {
+			discount /= 100;
+			if(discount > 0)
+				price -= (price*discount);
+
+			document.getElementById('total-price').value = price;
+		}
+
+		$('#price').on('change', function(event){
+			updatePrice(event.target.value, document.getElementById('discount').value);
+		})
+
+		$('#discount').on('change', function(event){
+			updatePrice(document.getElementById('price').value, event.target.value);
 		})
 	</script>
 @stop
