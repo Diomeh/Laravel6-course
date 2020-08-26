@@ -58,15 +58,14 @@
 		        <div class="input-group">
 		            <div class="input-group-prepend">
 		                <div class="input-group-text"><i class="fas fa-image"></i></div>
-			            <div class="custom-file">
-			            	{!! Form::file('image', ['class' => 'custom-file-input', 'id' => 'file-input', 'lang' => 'es']) !!}
-							<label class="custom-file-label" id="file-label" for="image">Seleccionar archivo</label>
-						</div>
 		            </div>
-
+		            <div class="custom-file">
+		            	{!! Form::file('image', ['class' => 'custom-file-input', 'id' => 'file-input', 'lang' => 'es']) !!}
+						<label class="custom-file-label" id="file-label" for="image">Seleccionar archivo</label>
+					</div>
 		        </div>
 		    </div>
-		</div>
+		</div>			
 
 		<div class="row mtop16">
 			<div class="col-md-3">
