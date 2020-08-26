@@ -69,7 +69,7 @@
 		</div>
 
 		<div class="row mtop16">
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<label for="price">Precio</label>
 				<div class="input-group">
 		            {!! Form::number('price', '0.001', ['class' => 'form-control', 
@@ -85,7 +85,7 @@
 		        </div>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<label for="discount">Descuento</label>
 				<div class="input-group">
 					{!! Form::number('discount', '0', ['class' => 'form-control', 
