@@ -72,9 +72,11 @@
 			<div class="col-md-6">
 				<label for="price">Precio</label>
 				<div class="input-group">
-		            {!! Form::number('price', null, ['class' => 'form-control', 
+		            {!! Form::number('price', '0.001', ['class' => 'form-control', 
+		            		'id' => 'price',
 		            		'min' => '0.001', 
-		            		'step' => 'any']
+		            		'step' => 'any',
+	            			'style' => 'text-align:right;']
 		            	) 
             		!!}
 		            <div class="input-group-append">
