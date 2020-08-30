@@ -103,7 +103,7 @@
 	            		) 
         			!!}	
 					<div class="input-group-append">
-		                <div class="input-group-text"><i class="fas fa-percentage"></i></i></div>
+		                <div class="input-group-text"><i class="fas fa-percentage"></i></div>
 		            </div>
 				</div>
 			</div>
