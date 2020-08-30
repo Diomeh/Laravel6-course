@@ -85,8 +85,15 @@
 			</div>
 
 			<div class="col-md-3">
-				<label for="discount">Descuento</label>
+				<span>
+					<label for="discount">Descuento</label>
+					<div class="slider-checkbox">  
+						<input type="checkbox" value="has-discount" id="discount-checkbox" name="check" checked />
+						<label for="discount-checkbox"></label>
+					</div>
+				</span>
 				<div class="input-group">
+
 					{!! Form::number('discount', '0', ['class' => 'form-control', 
 							'id' => 'discount',
 	            			'min' => '0.00', 
