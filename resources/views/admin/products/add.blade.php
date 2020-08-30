@@ -149,19 +149,27 @@
 
 		// Update total price tag
 		function updatePrice(price, discount) {
-			discount /= 100;
 			if(discount > 0)
-				price -= (price*discount);
+				price -= (price*discount/100);
 
 			document.getElementById('total-price').value = price;
-		}
+		};
 
 		$('#price').on('change', function(event){
 			updatePrice(event.target.value, document.getElementById('discount').value);
-		})
+		});
 
 		$('#discount').on('change', function(event){
 			updatePrice(document.getElementById('price').value, event.target.value);
+		});
+
+		// Toggle discount input based on checkbox state
+		$('#discount-checkbox').on('change', function() {
+			var checked = $(this).is(':checked');
+			$('#discount').prop('disabled', !checked);
+
+			updatePrice(document.getElementById('price').value, checked ? document.getElementById('discount').value : 0)
 		})
+		
 	</script>
 @stop
