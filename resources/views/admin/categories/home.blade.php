@@ -94,12 +94,12 @@
 					</div>
 
 					<div class="inside">
-						<nav class="nav">
-							@foreach(getModulesArray() as $m)
-								<a href="#" class="nav-link">{{ $m }}</a>
+						<nav class="nav nav-pills nav.fill">
+							@foreach(getModulesArray() as $m => $k)
+								<a href="{{ url('/admin/categories/'.$m) }}" class="nav-link">{{ $k }}</a>
 							@endforeach
 						</nav>
-						<table class="table">
+						<table class="table mtop16">
 							<thead>
 								<tr>
 									<th style="width: 32px;">Ícono</th>
@@ -115,14 +115,14 @@
 										<td>{{ $c->name }}</td>
 										<td>
 											<div class="btn-group">
-												<a href="{{ url('?action=edit') }}" 
+												<a href="{{ url('admin/category/'.$c->id.'?action=edit') }}" 
 													class="btn btn-primary"
 													data-toogle="tooltip"
 													data-placement="top"
 													title="Editar">
 													<i class="fas fa-user-edit"></i>
 												</a>
-												<a href="{{ url('?action=edit') }}" 
+												<a href="{{ url('admin/category/'.$c->id.'?action=delete') }}" 
 													class="btn btn-primary"
 													data-toogle="tooltip"
 													data-placement="top"
