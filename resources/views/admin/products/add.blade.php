@@ -68,7 +68,7 @@
 		</div>			
 
 		<div class="row mtop16">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<label for="price">Precio</label>
 				<div class="input-group">
 		            {!! Form::number('price', '0.001', ['class' => 'form-control', 
@@ -84,7 +84,7 @@
 		        </div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<span>
 					<label for="discount">Descuento</label>
 					<div class="slider-checkbox">  
@@ -108,7 +108,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-4">
 		        <label for="total-price" style="float: right; margin-right: 3em;">Total</label>
 		        <div class="input-group">
 		            {!! Form::text('total-price', '0.001', ['class' => 'form-control',
