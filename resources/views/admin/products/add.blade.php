@@ -140,6 +140,10 @@
 			</div>
 		</div>
 	{!! Form::close() !!}
+@stop
+
+@section('scripts')
+	@parent
 
 	<script>
 		// Update file input text box when file uploaded
@@ -171,5 +175,8 @@
 			updatePrice(document.getElementById('price').value, checked ? document.getElementById('discount').value : 0)
 		})
 		
+		$(document).ready(function() {
+			editor_init('editor');
+		})
 	</script>
-@stop
+@endsection
