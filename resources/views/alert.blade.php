@@ -1,6 +1,6 @@
 @if(Session::has('message'))
-	<div class="container mtop16">
-		<hr class="mtop16" id="divider" style="border-top: 1px solid #bbb; border-radius: 5px;">
+	<div class="container-fluid mtop16">
+		{{-- <hr class="mtop16" id="divider" style="border-top: 1px solid #bbb; border-radius: 5px;"> --}}
 		<div class="alert alert-{{ Session::get('typealert') }}" style="display: none;">
 			{{ Session::get('message') }}
 			@if($errors->any())
