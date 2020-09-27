@@ -127,7 +127,7 @@
 		<div class="row mtop16">
 			<div class="col-md-12">
 				<label for="description">Descripción</label>
-				{!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+				{!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'editor']) !!}
 			</div>
 		</div>
 
