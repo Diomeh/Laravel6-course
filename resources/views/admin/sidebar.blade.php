@@ -41,6 +41,12 @@
 				</a>
 			</li>
 			<li>
+				<a href="{{ url('/admin/categories/0') }}">
+					<i class="fas fa-tags"></i>
+					Categorías
+				</a>
+			</li>			
+			<li>
 				<a href="{{ url('/admin/users') }}">
 					<i class="fas fa-users"></i>
 					Usuarios
