@@ -49,7 +49,7 @@
 		            <div class="input-group-prepend">
 		                <div class="input-group-text"><i class="fas fa-tags"></i></div>
 		            </div>
-		            {!! Form::select('category', ['L' => 'Large', 'S' => 'Small'], 'S', ['class' => 'form-control']) !!}
+		            {!! Form::select('category', getModulesArray(), 0, ['class' => 'form-control']) !!}
 		        </div>
 		    </div>
 
