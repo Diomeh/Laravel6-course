@@ -144,7 +144,7 @@
 	<script>
 		// Update file input text box when file uploaded
 		$('#file-input').on('change', function(event){
- 			$('#file-label').text(event.target.value.substring(12));
+				$('#file-label').text(event.target.value.substring(12));
 		});
 
 		// Update total price tag
