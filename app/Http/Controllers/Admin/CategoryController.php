@@ -45,4 +45,42 @@ class CategoryController extends Controller
 		}
     	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
     }
+
+    public function getEdit($id)
+    {
+    	$category = Category::find($id);
+    	$data = ['category' => $category];
+    	return view('admin.categories.edit', $data);
+    }
+
+    public function postEdit(Request $request, $id)
+    {
+    	$rules = [
+    		'name' => 'required',
+    		'icon' => 'required'
+		];
+
+		$validator = Validator::make($request->all(), $rules);
+
+		if(!($validator->fails())){
+			$category = Category::find($id);
+			$category->module = $request->input('module');
+			$category->name = e($request->input('name'));
+			$category->slug = Str::slug($request->input('name'));
+			$category->icon = e($request->input('icon'));
+
+			
+			if($category->save())
+				return redirect('/admin/categories/'.$category->module)->with('message', 'Guardado con éxito.')->with('typealert', 'success');
+		}
+    	return redirect('/admin/categories/'.$category->module)->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
+    }
+
+    public function getDelete($id)
+    {
+    	$category = Category::find($id);
+    	if($category->delete())
+    		return back()->with('message', 'Borrado con éxito.')->with('typealert', 'success');
+    	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
+    }
 }
