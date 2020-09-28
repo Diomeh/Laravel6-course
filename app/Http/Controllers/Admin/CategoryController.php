@@ -43,7 +43,9 @@ class CategoryController extends Controller
 			if($category->save())
 				return back()->with('message', 'Guardado con éxito.')->with('typealert', 'success');
 		}
-    	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
+		
+    	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')
+    			->with('typealert', 'danger');
     }
 
     public function getEdit($id)
@@ -71,9 +73,13 @@ class CategoryController extends Controller
 
 			
 			if($category->save())
-				return redirect('/admin/categories/'.$category->module)->with('message', 'Guardado con éxito.')->with('typealert', 'success');
+				return redirect('/admin/categories/'.$category->module)
+					->with('message', 'Guardado con éxito.')
+					->with('typealert', 'success');
 		}
-    	return redirect('/admin/categories/'.$category->module)->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
+    	return redirect('/admin/categories/'.$category->module)
+    			->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')
+    			->with('typealert', 'danger');
     }
 
     public function getDelete($id)
@@ -81,6 +87,7 @@ class CategoryController extends Controller
     	$category = Category::find($id);
     	if($category->delete())
     		return back()->with('message', 'Borrado con éxito.')->with('typealert', 'success');
-    	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')->with('typealert', 'danger');
+    	return back()->with('message', 'Ha ocurrido un errror, por favor intente de nuevo.')
+    			->with('typealert', 'danger');
     }
 }
